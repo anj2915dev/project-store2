@@ -15,6 +15,9 @@
 
     <!-- font icons google -->
     <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta2/css/all.min.css"
+        integrity="sha512-YWzhKL2whUzgiheMoBFwW8CKV4qpHQAEuvilg9FAn5VJUDwKZZxkJNuGM4XkWuk94WCrrwslk8yWNGmY1EduTA=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
 
 
     <!-- boot starep -->
@@ -26,26 +29,45 @@
 <body class="bg-gray-100   ">
 
     <!--  navbars start -->
-    <nav class=" bg-red-500 h-auto w-full md:flex">
-        <div class="w-full md:w-1/2 h-full bg-yellow-300  ">
-     <div class="w-10 h-1.5 bg-pink-600">
+    <nav class=" bg-gray-50 p-3 h-auto w-full md:flex border-b-2 border-gray-200">
+        <div class="w-full md:w-1/2 h-2/2 flex items-center md:justify-evenly  bg-red-500 ">
+            <div class="w-1/2 bg-pink-600 h-full order-2  flex items-center justify-end md:hidden   ">
+                <i class="fas fa-bars text-5xl mx-5 "></i>
+            </div>
+            <div class="w-1/2 h-full order-1 flex justify-evenly items-center">
+                <a href="#" class=" block ">ل.گ.</a>
+                <a href="#" class=" block ">زنگوله</a>
+            </div>
 
-     </div>
-          <div >
-            <a href="#" class=" block ">ل.گ.</a>
-            <a href="#" class=" block ">زنگوله</a>
-          </div>
-           
         </div>
-        <div class="w-full   md:w-1/2 h-auto bg-blue-500 md:flex justify-evenly ">
-            <a href="#" class=" block ">خانه</a>
-            <a href="#" class=" block ">خانه</a>
-            <a href="#" class=" block ">خانه</a>
-            <a href="#" class=" block ">خانه</a>
-          
+        <div class="w-full   md:w-3/4 h-auto  md:flex justify-end items-center text-right  ">
+            <ul class="md:flex justify-evenly items-end bg-gray-200 md:bg-gray-50 text-right md:w-3/4 block  h-full w-full ">
+                <!-- btn1 -->
+                <li
+                    class="btn-nav cursor-pointer transition-all block px-8 py-4 md:py-4 md:flex hover:shadow-md md:mt-0 rounded-sm md:rounded-md order-1  md:w-auto w-full  bg-gray-100 text-right space-x-5   md:text-center pointer hover:no-underline">
+                    <span class=" text-purple-500 text-3xl">home</span> <i
+                        class="fas fa-home text-purple-500 text-4xl"></i>
+                </li>
+                <!-- btn2 -->
+                <li
+                    class="btn-nav cursor-pointer transition-all block px-8 py-4 mt-2 md:py-4 md:flex hover:shadow-md md:mt-0 rounded-sm md:rounded-md order-1  md:w-auto w-full  bg-gray-100 text-right space-x-5   md:text-center pointer hover:no-underline">
+                    <span class=" text-purple-500 text-3xl">home</span> <i
+                        class="fas fa-home text-purple-500 text-4xl"></i>
+                </li>
+                <!-- btn3 -->
+                <li
+                    class="btn-nav cursor-pointer transition-all block px-8 py-4 mt-2  md:py-4 md:flex hover:shadow-md md:mt-0 rounded-sm md:rounded-md order-1  md:w-auto w-full  bg-gray-100 text-right space-x-5   md:text-center pointer hover:no-underline">
+                    <span class=" text-purple-500 text-3xl">home</span> <i
+                        class="fas fa-home text-purple-500 text-4xl"></i>
+                </li>
+
+
         </div>
     </nav>
     <!--  navbars end -->
+    <aside class=" flex justify-center items-center">
+        <h1 class=" animate-pulse shadow-2xl border-b-2 border-gray-300 rounded-lg p-3">بوتیک اکسون</h1>
+    </aside>
 
 
     <script type="module" src="js/index.js"></script>

@@ -1,3 +1,13 @@
 
+.ant{
+    width: 60px;
+    transition: width 1s ease-in-out;
+}
+.tt{
+    width: 60px;
+}
+
+
+
 
 
