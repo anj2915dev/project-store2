@@ -33,11 +33,18 @@
         <div class="w-full md:w-1/2 h-2/2 flex items-center md:justify-start   ">
             <!-- icon respansave -->
             <div class="w-1/2  h-full order-2  flex items-center justify-end md:hidden   ">
-                <i class="fas fa-bars text-5xl mx-5 "></i>
+                <i class="fas fa-bars text-5xl mx-5 cursor-pointer "></i>
             </div>
             <div class="w-1/2  h-full order-1 flex justify-evenly items-center">
-                <i class="fas fa-shopping-cart text-5xl text-pink-600"></i>
-                <i class="fas fa-user-circle text-5xl text-pink-600 "></i>
+               
+                <div class=" relative">
+                    <i class="fas fa-shopping-cart text-5xl text-pink-600 cursor-pointer"></i>
+                    <span class=" absolute px-3 py-1 rounded-full bg-red-500 text-white font-bold text-2xl top-0">
+                        0
+                    </span>
+
+                </div>
+                <i class="fas fa-user-circle text-5xl text-pink-600 cursor-pointer "></i>
             </div>
 
         </div>
