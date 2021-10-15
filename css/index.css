@@ -6,6 +6,14 @@
 .tt{
     width: 60px;
 }
+.border{
+    border-bottom:1 solid red;
+}
+.product-center{
+    display: grid;
+    gap: 15px;
+    grid-template-columns: repeat(3, minmax(200px, 1fr));
+}
 
 
 
