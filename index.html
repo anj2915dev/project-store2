@@ -7,7 +7,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <link rel="stylesheet" href="public/style_2.css">
-   <link rel="stylesheet" href="css/index.css">
+    <link rel="stylesheet" href="css/index.css">
     <!-- font  awesome-->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"
         integrity="sha512-iBBXm8fW90+nuLcSKlbmrPcLa0OT92xO1BIsZ+ywDWZCvqsWgccV3gFoRBv0z+8dLJgyAHIhR35VZc2oM/gI1w=="
@@ -29,13 +29,21 @@
 <body class="bg-gray-100   ">
 
     <!--  navbars start -->
-    <nav class=" bg-gray-50 p-3 h-auto w-full md:flex border-b-2 border-gray-200 ">
+    <nav class="  bg-gray-50 p-3 h-auto w-full md:flex border-b-2 m-0 border-gray-200 ">
         <div class="w-full md:w-1/2 h-2/2 flex items-center md:justify-start   ">
             <!-- icon respansave -->
-            <div class="w-1/2  h-full order-2  flex items-center justify-end md:hidden   ">
-                <i class="fas fa-bars text-5xl mx-5 cursor-pointer "></i>
+            <div class="w-1/2  h-full order-2 relative flex items-center justify-start   ">
+                <div class="serch">
+                    <div class="icon">
+
+                    </div>
+                    <div class="input">
+                        <input type="text" maxlength="15" id="myserch" placeholder="serch">
+                    </div>
+                </div>
             </div>
-            <div class="w-1/2  h-full order-1 flex justify-evenly items-center m-4">
+
+            <div class="w-1/2   h-full order-1 flex justify-evenly items-center m-4">
 
                 <div class=" relative ">
                     <i class="fas fa-shopping-cart text-5xl text-pink-600 cursor-pointer"></i>
@@ -45,14 +53,16 @@
 
                 </div>
                 <div>
-                    <i class="fas fa-user-circle text-5xl text-pink-600 cursor-pointer "></i>
+                    <i class="fas fa-user-circle text-6xl text-pink-600 cursor-pointer "></i>
                 </div>
+
             </div>
 
+
         </div>
-        <div class="w-full   md:w-3/4 h-auto  md:flex justify-end items-center text-right  ">
+        <div class="menu-contet w-full     md:w-3/4 md:h-auto       md:flex justify-end items-center text-right  ">
             <ul
-                class="md:flex justify-evenly items-end bg-gray-200 md:bg-gray-50 text-right md:w-3/4 block  h-full w-full ">
+                class="md:flex   justify-evenly items-end bg-gray-200 md:bg-gray-50 text-right md:w-3/4 block  h-full w-full ">
                 <!-- btn1 -->
                 <li
                     class="btn-nav  cursor-pointer transition-all block px-8 py-4 md:py-4 md:flex hover:shadow-md md:mt-0 rounded-sm md:rounded-md order-1  md:w-auto w-full  bg-gray-100 text-right space-x-5   md:text-center pointer hover:no-underline">
@@ -76,100 +86,136 @@
         </div>
     </nav>
     <!--  navbars end -->
-    <aside class=" flex justify-center items-center">
-        <h1 class=" animate-pulse shadow-2xl border-b-2 border-gray-300 rounded-lg p-3">بوتیک اکسون</h1>
+    <aside class=" flex justify-center  items-center  ">
+        <h1 class=" animate-pulse shadow-2xl border-b-2 border-gray-300 rounded-lg p-3">فروشگاه اکسون</h1>
     </aside>
-    <section class="product-content   ">
+    <section class="product-content  ">
         <!-- products -->
-        <div class="product-center col-span-1 w-full  p-24 ">
+        <div class="product-center grid grid-rows-1 md:grid-cols-4 gap-16  sm:grid-cols-2  col-span-1 w-full  p-24 ">
             <!-- product1 -->
-            <div class="product   bg-red-600  rounded-lg hover:shadow-xl shadow-md  ">
+            <div
+                class="product h-auto transition ease-in hover:scale-105 transform duration-700  bg-red-50  rounded-lg hover:shadow-xl shadow-md  ">
                 <div class="  h-3/6  overflow-hidden rounded-t-lg w-full">
-                    <img src="images/image-le/test.jpg " class="w-full h-full" alt="">
+                    <img src="images/image-le/takht_4.jpg" class="w-full h-full" alt="">
                 </div>
                 <div class=" overflow-hidden rounded-b-lg  ">
-                    <div class=" h-full   p-4"> تخت اول</div>
-                    <div class=" h-full  p-4 "> <span>22000</span> <span>تومان</span></div>
-                    <div class=" h-full flex p-4 justify-center items-center ">
-                        <button class=" bg-purple-400 p-3  h-full text-center md:text-4xl rounded-lg text-3xl  text-white ">
+                    <div class=" h-full flex justify-center items-center    p-4">
+                        <h4 class=" text-purple-600  text-5xl">
+                            تخت اول
+
+                        </h4>
+                    </div>
+                    <div class=" h-full  p-4 flex flex-row-reverse justify-center items-center text-4xl font-bold">
+                        <span class=" m-2">22000</span> <span>تومان</span>
+                    </div>
+                    <div class=" h-full flex  justify-center items-center ">
+                        <button
+                            class=" bg-green-600 hover:bg-purple-500 transition hover:shadow-md ease-in-out   transform  hover:scale-110 p-3  h-full text-center md:text-4xl rounded-lg text-3xl  text-white ">
                             اضافه به سبد خرید
                         </button>
                     </div>
-                    <div class=" bg-blue-900  overflow-hidden  w-full">
-                        <p>
+                    <div class="   overflow-hidden  p-5 w-full bg-red-50 ">
+                        <p class="text-2xl text-center text-gray-700 font-bold flex justify-center items-center">
                             خرید بالای 100 تومن ارسال رایگان دارد
                         </p>
-                    </div >
+                    </div>
                 </div>
-                
-        
+
+
             </div>
-                <!-- product1 -->
-                <div class="product h-auto p-1  bg-red-600  rounded-lg   ">
-                    <div class=" bg-red-600 h-3/6  overflow-hidden rounded-t-lg w-full">
-                        <img src="images/image-le/test.jpg " class="w-full h-full" alt="">
-                    </div>
-                    <div class=" overflow-hidden">
-                        <div class=" bg-blue-500 h-1/6 p-4"> تخت اول</div>
-                        <div class=" bg-yellow-300 p-4 h-1/6"> <span>22000</span> <span>تومان</span></div>
-                        <div class=" bg-green-400 h-1/6 flex p-4 justify-center items-center ">
-                            <button class=" bg-indigo-700 p-3  h-full text-center md:text-4xl rounded-t-lg text-3xl  text-white ">
-                                اضافه به سبد خرید
-                            </button>
-                        </div>
-                        <div class=" bg-blue-900 p-4 overflow-hidden  w-full">
-                            <p>
-                                خرید بالای 100 تومن ارسال رایگان دارد
-                            </p>
-                        </div >
-                    </div>
-                    
-            
+            <!-- product2 -->
+            <div
+                class="product h-auto transition ease-in hover:scale-105 transform duration-700  bg-red-50  rounded-lg hover:shadow-xl shadow-md  ">
+                <div class="  h-3/6  overflow-hidden rounded-t-lg w-full">
+                    <img src="images/image-le/takht_4.jpg" class="w-full h-full" alt="">
                 </div>
-                    <!-- product1 -->
-            <div class="product h-auto p-1  rounded-lg   ">
-                <div class=" bg-red-600 h-3/6  overflow-hidden rounded-t-lg w-full">
-                    <img src="images/image-le/test.jpg " class="w-full h-full" alt="">
-                </div>
-                <div class=" overflow-hidden">
-                    <div class=" bg-blue-500 h-1/6 p-4"> تخت اول</div>
-                    <div class=" bg-yellow-300 p-4 h-1/6"> <span>22000</span> <span>تومان</span></div>
-                    <div class=" bg-green-400 h-1/6 flex p-4 justify-center items-center ">
-                        <button class=" bg-indigo-700 p-3  h-full text-center md:text-4xl rounded-t-lg text-3xl  text-white ">
+                <div class=" overflow-hidden rounded-b-lg  ">
+                    <div class=" h-full flex justify-center items-center    p-4">
+                        <h4 class=" text-purple-600  text-5xl">
+                            تخت اول
+
+                        </h4>
+                    </div>
+                    <div class=" h-full  p-4 flex flex-row-reverse justify-center items-center text-4xl font-bold">
+                        <span class=" m-2">22000</span> <span>تومان</span>
+                    </div>
+                    <div class=" h-full flex  justify-center items-center ">
+                        <button
+                            class=" bg-green-600 hover:bg-purple-500 transition hover:shadow-md ease-in-out   transform  hover:scale-110 p-3  h-full text-center md:text-4xl rounded-lg text-3xl  text-white ">
                             اضافه به سبد خرید
                         </button>
                     </div>
-                    <div class=" bg-blue-900 p-4 overflow-hidden  w-full">
-                        <p>
+                    <div class="   overflow-hidden  p-5 w-full bg-red-50 ">
+                        <p class="text-2xl text-center text-gray-700 font-bold flex justify-center items-center">
                             خرید بالای 100 تومن ارسال رایگان دارد
                         </p>
-                    </div >
+                    </div>
                 </div>
-                
-        
+
+
             </div>
-                <!-- product1 -->
-                <div class="product h-auto p-1  rounded-lg   ">
-                    <div class=" bg-red-600 h-3/6  overflow-hidden rounded-t-lg w-full">
-                        <img src="images/image-le/test.jpg " class="w-full h-full" alt="">
-                    </div>
-                    <div class=" overflow-hidden">
-                        <div class=" bg-blue-500 h-1/6 p-4"> تخت اول</div>
-                        <div class=" bg-yellow-300 p-4 h-1/6"> <span>22000</span> <span>تومان</span></div>
-                        <div class=" bg-green-400 h-1/6 flex p-4 justify-center items-center ">
-                            <button class=" bg-indigo-700 p-3  h-full text-center md:text-4xl rounded-t-lg text-3xl  text-white ">
-                                اضافه به سبد خرید
-                            </button>
-                        </div>
-                        <div class=" bg-blue-900 p-4 overflow-hidden  w-full">
-                            <p>
-                                خرید بالای 100 تومن ارسال رایگان دارد
-                            </p>
-                        </div >
-                    </div>
-                    
-            
+            <!-- product3 -->
+            <div
+                class="product h-auto transition ease-in hover:scale-105 transform duration-700  bg-red-50  rounded-lg hover:shadow-xl shadow-md  ">
+                <div class="  h-3/6  overflow-hidden rounded-t-lg w-full">
+                    <img src="images/image-le/takht_4.jpg" class="w-full h-full" alt="">
                 </div>
+                <div class=" overflow-hidden rounded-b-lg  ">
+                    <div class=" h-full flex justify-center items-center    p-4">
+                        <h4 class=" text-purple-600  text-5xl">
+                            تخت اول
+
+                        </h4>
+                    </div>
+                    <div class=" h-full  p-4 flex flex-row-reverse justify-center items-center text-4xl font-bold">
+                        <span class=" m-2">22000</span> <span>تومان</span>
+                    </div>
+                    <div class=" h-full flex  justify-center items-center ">
+                        <button
+                            class=" bg-green-600 hover:bg-purple-500 transition hover:shadow-md ease-in-out   transform  hover:scale-110 p-3  h-full text-center md:text-4xl rounded-lg text-3xl  text-white ">
+                            اضافه به سبد خرید
+                        </button>
+                    </div>
+                    <div class="   overflow-hidden  p-5 w-full bg-red-50 ">
+                        <p class="text-2xl text-center text-gray-700 font-bold flex justify-center items-center">
+                            خرید بالای 100 تومن ارسال رایگان دارد
+                        </p>
+                    </div>
+                </div>
+
+
+            </div>
+            <!-- product4 -->
+            <div
+                class="product h-auto transition ease-in hover:scale-105 transform duration-700  bg-red-50  rounded-lg hover:shadow-xl shadow-md  ">
+                <div class="  h-3/6  overflow-hidden rounded-t-lg w-full">
+                    <img src="images/image-le/takht_4.jpg" class="w-full h-full" alt="">
+                </div>
+                <div class=" overflow-hidden rounded-b-lg  ">
+                    <div class=" h-full flex justify-center items-center    p-4">
+                        <h4 class=" text-purple-600  text-5xl">
+                            تخت اول
+
+                        </h4>
+                    </div>
+                    <div class=" h-full  p-4 flex flex-row-reverse justify-center items-center text-4xl font-bold">
+                        <span class=" m-2">22000</span> <span>تومان</span>
+                    </div>
+                    <div class=" h-full flex  justify-center items-center ">
+                        <button
+                            class=" bg-green-600 hover:bg-purple-500 transition hover:shadow-md ease-in-out   transform  hover:scale-110 p-3  h-full text-center md:text-4xl rounded-lg text-3xl  text-white ">
+                            اضافه به سبد خرید
+                        </button>
+                    </div>
+                    <div class="   overflow-hidden  p-5 w-full bg-red-50 ">
+                        <p class="text-2xl text-center text-gray-700 font-bold flex justify-center items-center">
+                            خرید بالای 100 تومن ارسال رایگان دارد
+                        </p>
+                    </div>
+                </div>
+
+
+            </div>
         </div>
     </section>
 

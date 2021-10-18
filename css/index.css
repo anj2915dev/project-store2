@@ -1,21 +1,79 @@
+*{
+    margin: 0;
+    box-sizing: border-box;
+    padding: 0;
 
-.ant{
-    width: 60px;
-    transition: width 1s ease-in-out;
 }
-.tt{
-    width: 60px;
-}
-.border{
-    border-bottom:1 solid red;
-}
-.product-center{
-    display: grid;
-    gap: 15px;
-    grid-template-columns: repeat(3, minmax(200px, 1fr));
-}
+.serch{
+    position: relative;
+    width: 45px;
+    height: 45px;
+    background: #fff;
+    border-radius: 60px;
+    transition: 0.5s;
+    box-shadow:0 0 0 5px    #DB2777;
+    ;
+    overflow: hidden;
 
+}
+.serch .icon{
+    position: absolute;
+    top:0;
+    left: 0;
+    width: 45px;
+    height: 45px;
+    background: #fff;
+    border-radius: 60px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index:1000 ;
 
+}
+.serch.activate{
+    width: 250px;
 
+}
+.serch .icon::before{
+    content: '';
+    position: absolute;
+    width: 15px;
+    height: 15px;
+    border: 3px solid #287dfc;
+    border-radius: 50%;
+    transform: translate(-4px,-4px) ;
+
+}
+.serch .icon::after{
+    content: '';
+    position: absolute;
+    width: 3px;
+    height: 12px;
+    background: #287dfc;
+border-radius: 50%;
+transform: translate(6px,6px) rotate(315deg);
+
+}
+.serch .input{
+    position: relative;
+    width: 250px;
+    height: 45px;
+    left: 45px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.serch .input input{
+    position: absolute;
+    top:0;
+    width: 100%;
+    height: 100%;
+    border:none;
+    outline: none;
+    font-size: 18px;
+    padding: 10px 0;
+
+    
+}
 
 
