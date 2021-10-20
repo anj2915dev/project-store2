@@ -75,5 +75,8 @@ transform: translate(6px,6px) rotate(315deg);
 
     
 }
-
+ .module{
+     position: absolute;
+     left: 25%;
+ }
 
