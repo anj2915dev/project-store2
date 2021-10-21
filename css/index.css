@@ -79,4 +79,10 @@ transform: translate(6px,6px) rotate(315deg);
      position: absolute;
      left: 25%;
  }
+ .module{
+     transform:translateY(-120vh);
+     opacity: 0;
+     transition:all 0.8s ease-in-out;
+
+ }
 
